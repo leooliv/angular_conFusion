@@ -10,9 +10,8 @@ const DISHES: Dish[] = [
     featured: true,
     label: 'Hot',
     price: '4.99',
-    // tslint:disable-next-line:max-line-length
-    description: 'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with '+
-    'Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'
+    description: 'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with' +
+    ' Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'
   },
   {
     id: '1',
@@ -22,8 +21,8 @@ const DISHES: Dish[] = [
     featured: false,
     label: '',
     price: '1.99',
-    description: 'Deep fried Zucchini coated with mildly spiced Chickpea '+ 
-    'flour batter accompanied with a sweet-tangy tamarind sauce'
+    description: `Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with ` +
+    `a sweet-tangy tamarind sauce`
   },
   {
     id: '2',
@@ -43,8 +42,8 @@ const DISHES: Dish[] = [
     featured: false,
     label: '',
     price: '2.99',
-    description: 'A delectable, semi-sweet New York Style Cheese '+ 
-    'Cake, with Graham cracker crust and spiced with Indian cardamoms'
+    description: 'A delectable, semi-sweet New York Style Cheese' +
+    ' Cake, with Graham cracker crust and spiced with Indian cardamoms'
   }
  ];
 
