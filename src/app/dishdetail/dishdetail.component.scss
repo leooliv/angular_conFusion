@@ -1,36 +1,39 @@
-.marginCorrector {
-    margin-bottom: 3px;
-    margin-top: 3px;
-}
 
-.largeFont {
-    font-size: 25px;
-}
+@media screen and (min-width: 1200px) {
+    .margin-corrector {
+        margin-bottom: 3px;
+        margin-top: 3px;
+    }
 
-.mediumFont {
-    font-size: 15px;
-}
+    .large-font {
+        font-size: 28px;
+    }
 
-.smallerFont {
-    font-size: 13px;
-}
+    .medium-font {
+        font-size: 15px;
+    }
 
-.bottomSpacement {
-    margin-bottom: 40px;
-}
+    .smaller-font {
+        font-size: 13px;
+    }
 
-.encloserTop {
-    margin-top: -125px;
-}
+    .bottom-spacement {
+        margin-bottom: 40px;
+    }
 
-.spacerBottom {
-    padding-bottom: 15px;
-}
+    .encloser-top {
+        margin-top: -125px;
+    }
 
-.marginLeftTitle {
-    margin-left: -110px;
-}
+    .spacer-bottom {
+        padding-bottom: 15px;
+    }
 
-.marginLeftContent {
-    margin-left: -90px;
+    .margin-left-title {
+        margin-left: -110px;
+    }
+
+    .margin-left-content {
+        margin-left: -90px;
+    }
 }
