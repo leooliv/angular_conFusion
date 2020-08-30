@@ -1,20 +1,9 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!--
-NgIf = if type is = null, dont do anything, else, do something
+<!--NgIf = if type is = null, dont do anything, else, do something
 <div *ngIf='selectedDish'>...</div>
 NgFor = for loop through selected statement
 <div *ngFor='let dish of dishes'>...</div>
 NgSwitch
-<div></div>    -->
-<mat-toolbar color = "primary"> 
-    <span>Ristorante Con Fusion</span> 
-</mat-toolbar>
-
-<app-menu></app-menu>
+<div></div>-->
+<app-header></app-header>
+<router-outlet></router-outlet>
+<app-footer></app-footer>

@@ -6,7 +6,7 @@
     fxLayoutGap="10px"
     fxLayoutGap.xs="0">
 
-  <div fxFlex="40" class="max-height-card">
+  <div fxFlex="40">
     <mat-card *ngIf="dish">
         <mat-card-header>
             <mat-card-title>
@@ -26,7 +26,7 @@
   </div>
 
   <div fxFlex="40">
-    <mat-list class="max-height-comment">
+    <mat-list *ngIf = "dish">
         <h3 class='bottom-spacement
         large-font spacer-bottom
         margin-left-title'>
