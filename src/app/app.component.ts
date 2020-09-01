@@ -7,10 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'conFusion';
-
-  isShow = false;
-
-  toggleDisplay() {
-    this.isShow = !this.isShow;
-  }
 }
