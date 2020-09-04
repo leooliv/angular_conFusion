@@ -12,8 +12,11 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
+import { MatSelectModule } from '@angular/material/select';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import 'hammerjs';
 
 import { AboutComponent } from './about/about.component';
@@ -55,7 +58,10 @@ import { PromotionService } from './services/promotion.service';
     FormsModule,
     MatInputModule,
     MatFormFieldModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatSelectModule,
+    MatSlideToggleModule,
+    ReactiveFormsModule
   ],
   providers: [
     DishService,
