@@ -53,24 +53,25 @@
         </mat-card>
     </div>
 
-<div class="container"
-    fxLayout="column"
-    fxLayoutGap="10px">
-
-    <mat-list fxFlex  *ngFor="let leader of leaders">
-        <mat-list-item>
-        <img matListAvatar src={{leader.image}} alt="{{leader.description}}">
-        <h1 matLine> {{leader.name}} {{leader.abbr}}</h1>
-        <p matLine>
-            <span> {{leader.designation}} </span>
-        </p>
-        </mat-list-item>
-        <mat-list-item>
-            <p matline>
-                {{leader.description}}
-            </p>
-        </mat-list-item>
-        <hr>
-    </mat-list>
-
+    <div class="container"
+        fxLayout="column"
+        fxLayoutGap="10px">
+        <h2>Corporate Leadership</h2>
+        <mat-list fxFlex  *ngFor="let leader of leaders">
+            <mat-list-item>
+            <img matListAvatar src={{leader.image}} alt="{{leader.name}}">
+            <h1 matLine> {{leader.name}} {{leader.abbr}}</h1>
+            <p matLine> {{leader.designation}} </p>
+            </mat-list-item>
+            <mat-list-item>
+                <p matline>
+                    {{leader.description}}
+                </p>
+            </mat-list-item>
+            <hr>
+        </mat-list>
+        <div [hidden]="leaders">
+            <mat-spinner></mat-spinner><h4>Loading . . . Please Wait</h4>
+        </div>
+    </div>
 </div>
