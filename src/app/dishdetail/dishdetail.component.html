@@ -6,11 +6,11 @@
     fxLayoutGap="10px"
     fxLayoutGap.xs="0">
 
-  <div fxFlex="40">
-    <mat-card *ngIf="dish">
+  <div fxFlex="40"  *ngIf="dish">
+    <mat-card>
         <mat-card-header>
             <mat-card-title>
-              <h3 *ngIf="dish">{{dish.name | uppercase}}</h3>
+              <h3>{{dish.name | uppercase}}</h3>
             </mat-card-title>
         </mat-card-header>
         <img mat-card-image src={{dish.image}} alt={{dish.name}}>
@@ -19,15 +19,22 @@
                 </p>
         </mat-card-content>
         <mat-card-actions>
-            <button color="primary" mat-button (click)="goBack()">BACK</button>
-            <button color="primary" mat-button>LIKE</button>
-            <button color="primary" mat-button>SHARE</button>
+          <button mat-button [routerLink]="['/dishdetail', prev]">
+            <span class="fa fa-chevron-left fa-lg"></span>
+          </button>
+          <button color="primary" mat-button (click)="goBack()">BACK</button>
+          <button color="primary" mat-button>LIKE</button>
+          <button color="primary" mat-button>SHARE</button>
+          <span class="flex-spacer"></span>
+          <button mat-button [routerLink]="['/dishdetail', next]">
+            <span class="fa fa-chevron-right fa-lg"></span>
+          </button>
         </mat-card-actions>
     </mat-card>
   </div>
 
-  <div fxFlex="40">
-    <mat-list *ngIf = "dish">
+  <div fxFlex="40"  *ngIf="dish">
+    <mat-list>
         <h3 class='bottom-spacement
         large-font spacer-bottom
         margin-left-title'>
