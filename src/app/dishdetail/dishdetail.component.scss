@@ -1,5 +1,3 @@
-
-@media screen and (min-width: 1200px) {
     .margin-corrector {
         margin-bottom: 3px;
         margin-top: 3px;
@@ -21,19 +19,19 @@
         margin-bottom: 40px;
     }
 
-    .encloser-top {
-        margin-top: -140px;
-    }
-
     .spacer-bottom {
         padding-bottom: 15px;
     }
 
+    mat-form-field {
+        display: block;
+    }
+@media screen and (min-width: 1280px) {
     .margin-left-title {
-        margin-left: -60px;
+        margin-left: -25px;
     }
 
-    .margin-left-content {
-        margin-left: -45px;
+    .encloser-top {
+        margin-top: -70px;
     }
 }
